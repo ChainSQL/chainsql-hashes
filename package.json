@@ -1,6 +1,6 @@
 {
   "name": "chainsql-hashes",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Compute hashes of chainsql objects",
   "license": "ISC",
   "scripts": {
@@ -18,8 +18,8 @@
   "dependencies": {
     "bignumber.js": "^4.1.0",
     "create-hash": "^1.1.2",
-    "chainsql-address-codec": "^2.0.1",
-    "chainsql-binary-codec": "^0.1.0"
+    "chainsql-address-codec": "^2.0.3",
+    "chainsql-binary-codec": "^0.1.26"
   },
   "devDependencies": {
     "mocha": "*"
