@@ -1,1 +1,2 @@
-# chainsql-hashes
+chainsql-hashes
+Methods to hash Chainsql objects
