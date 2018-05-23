@@ -1,7 +1,7 @@
 'use strict';
 var BigNumber = require('bignumber.js');
-var decodeAddress = require('chainsql-address-codec').decodeAddress;
-var binary = require('chainsql-binary-codec');
+var decodeAddress = require('dac-address-codec').decodeAddress;
+var binary = require('dac-binary-codec');
 var hashprefixes = require('./hashprefixes');
 var SHAMap = require('./shamap').SHAMap;
 var SHAMapTreeNode = require('./shamap').SHAMapTreeNode;

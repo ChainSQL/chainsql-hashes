@@ -1,2 +1,2 @@
-chainsql-hashes
-Methods to hash Chainsql objects
+dac-hashes
+Methods to hash dac objects

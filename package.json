@@ -1,7 +1,7 @@
 {
-  "name": "chainsql-hashes",
-  "version": "0.3.2",
-  "description": "Compute hashes of chainsql objects",
+  "name": "dac-hashes",
+  "version": "1.0.0",
+  "description": "Compute hashes of dac objects",
   "license": "ISC",
   "scripts": {
     "test": "mocha"
@@ -12,14 +12,14 @@
   },
   "main": "src/index.js",
   "keywords": [
-    "chainsql",
-    "chainsql-hashes"
+    "dac",
+    "dac-hashes"
   ],
   "dependencies": {
     "bignumber.js": "^4.1.0",
     "create-hash": "^1.1.2",
-    "chainsql-address-codec": "^2.0.3",
-    "chainsql-binary-codec": "^0.1.26"
+    "dac-address-codec": "^1.0.0",
+    "dac-binary-codec": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "*"
