@@ -7,9 +7,14 @@ var SHAMap = require('./shamap').SHAMap;
 var SHAMapTreeNode = require('./shamap').SHAMapTreeNode;
 var ledgerspaces = require('./ledgerspaces');
 var sha512half = require('./sha512half');
+var keypairs = require('chainsql-keypairs');
 
 function hash(hex) {
-  return sha512half(new Buffer(hex, 'hex'));
+	if(process.env.CRP_ALG === "gmAlg") {
+		return keypairs.gmAlgSm3(new Buffer(hex, 'hex'));
+	} else {
+		return sha512half(new Buffer(hex, 'hex'));
+	}
 }
 
 function padLeftZero(string, length) {
