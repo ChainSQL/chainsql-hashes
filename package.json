@@ -1,6 +1,6 @@
 {
   "name": "chainsql-hashes",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Compute hashes of chainsql objects",
   "license": "ISC",
   "scripts": {

@@ -10,7 +10,7 @@ var sha512half = require('./sha512half');
 var keypairs = require('chainsql-keypairs');
 
 function hash(hex) {
-	if(process.env.CRP_ALG === "gmAlg") {
+	if(keypairs.getCryptAlgType() === "gmAlg") {
 		return keypairs.gmAlgSm3(new Buffer(hex, 'hex'));
 	} else {
 		return sha512half(new Buffer(hex, 'hex'));
