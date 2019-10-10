@@ -19,7 +19,8 @@
     "bignumber.js": "^4.1.0",
     "create-hash": "^1.1.2",
     "chainsql-address-codec": "^2.0.3",
-    "chainsql-binary-codec": "^0.1.26"
+    "chainsql-binary-codec": "^0.1.26",
+    "chainsql-keypairs": "0.10.6"
   },
   "devDependencies": {
     "mocha": "*"
