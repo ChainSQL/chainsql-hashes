@@ -12,7 +12,10 @@ var keypairs = require('chainsql-keypairs');
 function hash(hex) {
 	if(keypairs.getCryptAlgType() === "gmAlg") {
 		return keypairs.gmAlgSm3(new Buffer(hex, 'hex'));
-	} else {
+  }else if(keypairs.getCryptAlgType() === "softGMAlg"){
+    var gmHash = keypairs.softGMAlgSm3(hex);
+    return gmHash;
+  }else {
 		return sha512half(new Buffer(hex, 'hex'));
 	}
 }
